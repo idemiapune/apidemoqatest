@@ -63,8 +63,8 @@ public class ShelfTestWithoutJUnit {
 	public void test2() {
 		String testResult = "pass";
 		RestTemplate restTemplate = new RestTemplate();
-		Shelf shelf = restTemplate.getForObject("http://localhost:8080/shelves/101", Shelf.class);
-		if (shelf.getId() != 109) {
+		Shelf shelf = restTemplate.getForObject("http://localhost:8080/shelves/106", Shelf.class);
+		if (shelf.getId() != 106) {
 			testResult = "fail";
 			System.out.println("shelfId Mismatch, Hence Test Result is: " + testResult);
 			return;
@@ -76,7 +76,7 @@ public class ShelfTestWithoutJUnit {
 	public void test3() {
 		String testResult = "pass";
 		RestTemplate restTemplate = new RestTemplate();
-		Shelf shelf = restTemplate.getForObject("http://localhost:8080/shelves/101", Shelf.class);
+		Shelf shelf = restTemplate.getForObject("http://localhost:8080/shelves/106", Shelf.class);
 		if (shelf.getCapacity() != 3) {
 			testResult = "fail";
 			System.out.println("Shelf Capacity Mismatch, Hence Test Result is: " + testResult);
@@ -89,7 +89,7 @@ public class ShelfTestWithoutJUnit {
 	public void test4() {
 		String testResult = "pass";
 		RestTemplate restTemplate = new RestTemplate();
-		Shelf shelf = restTemplate.getForObject("http://localhost:8080/shelves/101", Shelf.class);
+		Shelf shelf = restTemplate.getForObject("http://localhost:8080/shelves/106", Shelf.class);
 		if (shelf.getBooks().size() != 3) {
 			testResult = "fail";
 			System.out.println("Book List Size Mismatch, Hence Test Result is: " + testResult);
@@ -99,18 +99,7 @@ public class ShelfTestWithoutJUnit {
 		}
 	}
 
-	/*
-	 * Test delete method .It will delete Shelf .
-	 * 
-	 * @author Shraddha
-	 */
-	public void test5() {
-		String testResult = "pass";
-		RestTemplate restTemplate = new RestTemplate();
-		restTemplate.delete("http://localhost:8080/shelves/101");
-		System.out.println("Delete success for id : " + 101 + " Hence Test Result is:" + testResult);
-	}
-
+	
 	/*
 	 * Test put method it will update Shelf details
 	 * 
@@ -149,6 +138,21 @@ public class ShelfTestWithoutJUnit {
 		System.out.println("Shelf Capacity is Updated, Hence Test Result is: " + testResult);
 
 	}
+	
+	
+	
+	/*
+	 * Test delete method .It will delete Shelf .
+	 * 
+	 * @author Shraddha
+	 */
+	public void test5() {
+		String testResult = "pass";
+		RestTemplate restTemplate = new RestTemplate();
+		restTemplate.delete("http://localhost:8080/shelves/107");
+		System.out.println("Delete success for id : " + 107 + " Hence Test Result is:" + testResult);
+	}
+
 	public static void main(String[] args) {
 		ShelfTestWithoutJUnit shelfTestWithoutJUnit = new ShelfTestWithoutJUnit();
 	;
