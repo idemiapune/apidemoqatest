@@ -139,8 +139,6 @@ public class ShelfTestWithoutJUnit {
 
 	}
 	
-	
-	
 	/*
 	 * Test delete method .It will delete Shelf .
 	 * 
