@@ -99,7 +99,6 @@ public class ShelfTestWithoutJUnit {
 		}
 	}
 
-	
 	/*
 	 * Test put method it will update Shelf details
 	 * 
@@ -138,7 +137,7 @@ public class ShelfTestWithoutJUnit {
 		System.out.println("Shelf Capacity is Updated, Hence Test Result is: " + testResult);
 
 	}
-	
+
 	/*
 	 * Test delete method .It will delete Shelf .
 	 * 
@@ -153,15 +152,14 @@ public class ShelfTestWithoutJUnit {
 
 	public static void main(String[] args) {
 		ShelfTestWithoutJUnit shelfTestWithoutJUnit = new ShelfTestWithoutJUnit();
-	;
+		;
 		shelfTestWithoutJUnit.test1();
 		shelfTestWithoutJUnit.test2();
 		shelfTestWithoutJUnit.test3();
-	    shelfTestWithoutJUnit.test4();
+		shelfTestWithoutJUnit.test4();
 		shelfTestWithoutJUnit.test5();
 		shelfTestWithoutJUnit.test6();
 		shelfTestWithoutJUnit.test7();
-	
 
 	}
 }
