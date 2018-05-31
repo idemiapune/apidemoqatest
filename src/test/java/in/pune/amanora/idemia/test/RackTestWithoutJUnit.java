@@ -8,6 +8,12 @@ import in.pune.amanora.idemia.model.Shelf;
 
 import org.springframework.web.client.RestTemplate;
 
+/*
+ * Test Post method by giving Rack details
+ * 
+ * @author Swarshri
+ */
+
 public class RackTestWithoutJUnit {
 
 	public void test1() {
@@ -41,6 +47,12 @@ public class RackTestWithoutJUnit {
 		}
 	}
 
+	/*
+	 * Test Get method and get Rack details
+	 * 
+	 * @author Swarshri
+	 */
+
 	public void test2() {
 		String testResult = "pass";
 		RestTemplate restTemplate = new RestTemplate();
@@ -68,6 +80,12 @@ public class RackTestWithoutJUnit {
 
 	}
 
+	/*
+	 * Test put method it will update Rack details
+	 * 
+	 * @author Swarshri
+	 */
+
 	public void test3() {
 		String testResult = "pass";
 
@@ -84,6 +102,12 @@ public class RackTestWithoutJUnit {
 				+ " Hence the Test Result is: " + testResult);
 	}
 
+	/*
+	 * Test delete method .It will delete Rack .
+	 * 
+	 * @author Swarshri
+	 */
+
 	public void test4() {
 		String testResult = "pass";
 		RestTemplate restTemplate = new RestTemplate();
@@ -95,9 +119,9 @@ public class RackTestWithoutJUnit {
 
 	public static void main(String[] args) {
 		RackTestWithoutJUnit testWithoutJUnit = new RackTestWithoutJUnit();
-		// testWithoutJUnit.test1();
-		// testWithoutJUnit.test2();
+		testWithoutJUnit.test1();
+		testWithoutJUnit.test2();
 		testWithoutJUnit.test3();
-		// testWithoutJUnit.test4();
+		testWithoutJUnit.test4();
 	}
 }
