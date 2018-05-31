@@ -105,7 +105,7 @@ public class ShelfTestWithoutJUnit {
 	 * 
 	 * @author Shraddha
 	 */
-	public void test6() {
+	public void test5() {
 
 		String testResult = "pass";
 		Shelf shelf = new Shelf();
@@ -122,7 +122,7 @@ public class ShelfTestWithoutJUnit {
 
 	}
 
-	public void test7() {
+	public void test6() {
 
 		String testResult = "pass";
 		Shelf shelf = new Shelf();
@@ -146,7 +146,7 @@ public class ShelfTestWithoutJUnit {
 	 * 
 	 * @author Shraddha
 	 */
-	public void test5() {
+	public void test7() {
 		String testResult = "pass";
 		RestTemplate restTemplate = new RestTemplate();
 		restTemplate.delete("http://localhost:8080/shelves/107");
